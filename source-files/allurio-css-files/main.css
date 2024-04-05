@@ -2013,6 +2013,26 @@ form .inputs-description {
   -moz-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
+.contact-email::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background-color: #000000;
+  -webkit-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  -moz-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+.contact-email:hover {
+  color: #111111;
+}
+.contact-email:hover::after {
+  width: 100%;
+}
 .menu__contact .contact-content .contact .contact-item a::after {
   content: "";
   display: block;
